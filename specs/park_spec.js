@@ -16,5 +16,15 @@ describe('Park', function () {
     assert.deepStrictEqual(park.enclosure, []);
   })
 
+  it('should start with empty enclosure', function (){
+    const actual = park.dinosaurCount();
+    assert.strictEqual(actual, 0);
+  })
+
+  it('should be able to add dinosaur', function(){
+    park.addDinosaur(dinosaur);
+    assert.deepStrictEqual(park.enclosure, [dinosaur]);
+  })
+
 
 })
