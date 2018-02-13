@@ -11,4 +11,8 @@ describe('Dinosaur', function (){
   it('should have type', function(){
     assert.strictEqual(dinosaur.type, "Brontosaurus")
   })
+
+  it('should have offSpring', function(){
+    assert.strictEqual(dinosaur.offSpring, 2)
+  })
 })
