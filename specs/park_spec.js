@@ -9,7 +9,10 @@ describe('Park', function () {
 
   beforeEach(function () {
     park = new Park();
-    dinosaur = new Dinosaur('Brontosaurus', 2)
+    dinosaur1 = new Dinosaur('Brontosaurus', 2)
+    dinosaur2 = new Dinosaur('Stegasaurus', 3)
+    dinosaur3 = new Dinosaur('Tuatara', 4)
+
   })
 
   it('should have an enclosure', function () {
@@ -22,9 +25,17 @@ describe('Park', function () {
   })
 
   it('should be able to add dinosaur', function(){
-    park.addDinosaur(dinosaur);
+    park.addDinosaur(dinosaur1);
     assert.deepStrictEqual(park.enclosure, [dinosaur]);
   })
+
+
+
+  // it('should be able to remove a dinosaur', function () {
+  //   park.addDinosaur(dinosaur1);
+  //   park.removeDinosaur('Brontosaurus');
+  //   assert.strictEqual(0, park.dinosaur.length);
+  // });
 
 
 })
