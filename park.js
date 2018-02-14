@@ -12,12 +12,11 @@ Park.prototype.addDinosaur = function(dinosaur){
 
 // Park.prototype.removeDinosaur = function(type) {
 //   for (var dinosaur of this.dinosaur) {
-//     if (dinosaur.type === type) {       s
+//     if (dinosaur.type === type) {
 //       var index = this.dinosaur.indexOf(dinosaur);
 //       this.dinosaur.splice(index, 1);
 //     }
 //   }
-}
 
 
 module.exports = Park;
